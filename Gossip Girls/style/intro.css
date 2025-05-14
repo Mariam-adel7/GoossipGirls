@@ -1,0 +1,73 @@
+.intro {
+  width: 100%;
+  z-index: -27982;
+  height: calc(100vh - 75px);
+}
+.intro img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.intro-info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+  margin-left: 55px;
+}
+.intro-info .activity {
+  display: flex;
+}
+.intro-info .info-title {
+  font-size: 60px;
+  color: lightpink;
+}
+.comment,
+.like,
+.share {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.comment i,
+.like i,
+.share i {
+  margin: 0 7px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.comment i:hover,
+.like i:hover,
+.share i:hover {
+  color: lightpink;
+}
+.intro-info .read-more {
+  margin-top: 20px;
+}
+.intro-info .read-more .read-btn {
+  text-decoration: none;
+  color: lightpink;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 5px 12px;
+}
+.intro-info .read-more .read-btn:hover {
+  background-color: lightpink;
+  color: white;
+}
+@media (max-width: 500px) {
+  .nav-section {
+    display: none;
+  }
+  .intro-info {
+    margin-left: 0;
+  }
+}
+.news {
+  text-decoration: none;
+}
